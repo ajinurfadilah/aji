@@ -1,0 +1,131 @@
+   :root {
+      --dark-green: #1e2b26;
+      --green: #2f3d37;
+      --light-green: #5aaf76;
+      --soft-green: #d8f3dc;
+      --white: #f1f1f1;
+    }
+
+    * { box-sizing: border-box; 
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--dark-green);
+      color: var(--white);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+      -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    touch-action: manipulation;
+    }
+
+    h1, h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background-color: var(--green);
+      border: 2px solid var(--light-green);
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      padding: 20px;
+      margin: 20px auto;
+      width: 100%;
+      max-width: 500px;
+      text-align: center;
+    }
+    
+    #tabelMenu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+#tabelMenu button {
+  padding: 12px;
+  width: 100%;
+  text-align: center;
+}
+
+    button {
+      background-color: var(--light-green);
+      color: #000;
+      border: 2px solid #fff;
+      padding: 12px 20px;
+      margin: 8px auto;
+      font-size: 16px;
+      border-radius: 10px;
+      cursor: pointer;
+      width: 80%;
+      max-width: 300px;
+      display: block;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #caffbf;
+      transform: scale(1.03);
+    }
+    #nomorSoal{
+      background-color: #ffe66d;
+      padding: 5px;
+      font-weight: bold;
+      color: #5b5b5b;
+      font-size: 15px;
+      border-radius: 12px;
+      margin: 5px 50px;
+    }
+    
+    #isiSoal{
+      margin-top: 20px;
+      color: var(--soft-green);
+      font-weight: bold;
+      border: 2px dashed var(--soft-green);
+      padding: 15px;
+      font-size: 20px;
+      border-radius: 12px;
+    }
+
+    #answer {
+      font-size: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-weight: bold;
+      opacity: 0;
+      color: #ffe66d;
+      
+      padding-top: 10px;
+      padding-bottom: 10px;
+      visibility: hidden;
+    }
+    
+    
+    #classborderanswer{
+      border-top: 1px dashed #ffe66d;
+      border-bottom: 1px dashed #ffe66d;
+      margin-bottom: 20px;
+    }
+    
+  .blurred {
+    filter: blur(12px);
+    transition: 0.3s ease;
+  }
+
+    @media (max-width: 480px) {
+      button {
+        font-size: 14px;
+        padding: 10px;
+      }
+
+      .card {
+        padding: 15px;
+      }
+    }￼Enter
