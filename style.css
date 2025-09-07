@@ -29,7 +29,11 @@
       text-align: center;
       margin-bottom: 20px;
     }
-
+    #judulWeb .copyright{
+      color: orange;
+      font-size: 1rem;
+    }
+    
     .card {
       background-color: var(--green);
       border: 2px solid var(--light-green);
@@ -128,4 +132,4 @@
       .card {
         padding: 15px;
       }
-    }￼Enter
+    }
