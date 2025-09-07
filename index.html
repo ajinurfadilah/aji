@@ -1,0 +1,78 @@
+here<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kosakata Aing</title>
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+
+  <h1 id="judulWeb">EPS TOPIK 2024</h1>
+  <h1 id="judulKategori" style="display:none"></h1>
+
+  <div id="menu" class="card">
+    <div style="margin-bottom: 20px;">
+  <label style="cursor: pointer;">
+    <input type="checkbox" id="reverseToggle" onchange="updateToggleState()" style="transform: scale(1.3); margin-right: 8px;" />
+    Tukar Soal & Jawaban
+  </label>
+</div>
+
+    <button onclick="toggleContinue()">🕒 Continue</button>
+<div id="continueList" style="display: none;"></div>
+   <div id="tabelMenu">
+    <button onclick="startGame('SatuEpstopik2024')">Part 1 </button>
+    <button onclick="startGame('DuaEpstopik2024')">Part 2</button>
+    <button onclick="startGame('TigaEpstopik2024')">Part 3</button>  
+    <button onclick="startGame('EmpatEpstopik2024')">Part 4</button>  
+    <button onclick="startGame('LimaEpstopik2024')">Part 5</button>  
+    <button onclick="startGame('semua')">🎲 Acak Semua Kategori</button>
+    </div>
+  </div>
+
+  <div id="game" class="card" style="display:none;">
+    <button id="exitBtn" onclick="saveProgress()">❌ Exit</button>
+    
+    <div id="question" style="margin-bottom: 20px;"></div>
+    <div id="classborderanswer">
+      <div id="answer"></div>
+    </div>
+    <button id="idJawaban" onclick="showAnswer()">Tampilkan Jawaban</button>
+    
+    <button id="idSelanjutnya" onclick="nextQuestion()">Soal Selanjutnya</button>
+    <button id="belumTauBtn" onclick="tandaiBelumTau()" style="display:none">Belum Tau</button>
+  </div>
+
+  <div id="end-screen" class="card" style="display:none;">
+    <h2>Soal Habis!</h2>
+    <button onclick="restartGame()">🔁 Ulangi</button>
+    <button onclick="goToMenu()">🏠 Kembali ke Menu</button>
+    <div id="belumTauTableWrapper" style="display:none">
+  <h3>Soal yang Ditandai "Belum Tau"</h3>
+  <table border="1" style="width:100%; border-collapse: collapse;">
+    <thead>  
+  <tr>  
+    <th>Nomor</th>  
+    <th>Soal</th>  
+    <th>Jawaban</th>  
+    <th>Aksi</th>
+  </tr>  
+</thead>
+    <tbody id="belumTauTableBody"></tbody>
+  </table>
+  <button onclick="latihLagi()">Latih Lagi</button>
+<button onclick="downloadBelumTau()">📥 Download TXT</button>
+  
+</div>
+<div id="allHafalText" style="display:none">Kamu sudah hafal semua! 👍</div>
+  </div>
+  <footer id="myFooter">
+  
+</footer>
+
+  <script src="js/script.js"></script>
+  <script src="json/json.js"></script>
+</body>
+</html>
