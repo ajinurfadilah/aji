@@ -24,9 +24,6 @@ function getShuffledDataByCategory(category) {
     return shuffleArray([
       ...database.SatuEpstopik2024,
       ...database.DuaEpstopik2024,
-      ...database.TigaEpstopik2024,
-      ...database.EmpatEpstopik2024,
-      ...database.LimaEpstopik2024,
       
     ]);
   } else {
@@ -375,4 +372,4 @@ function downloadBelumTau() {
 }
 
     // Start at menu
-    showElement("menu");￼Enter
+    showElement("menu");
